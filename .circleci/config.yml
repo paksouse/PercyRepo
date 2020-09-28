@@ -8,7 +8,7 @@ default_steps: &default_steps
   steps:
     - checkout
     - run: cd percyAppTest && npm i
-    - run: cd percyAppTest && sudo ng build
+    - run: cd percyAppTest && ./node_modules/@angular/cli/bin/ng build
     - run: cd percyAppTest && npm run test
     - run: cd percyAppTest && npm run snapshots
 
