@@ -15,7 +15,7 @@ PercyScript.run(async (page, percySnapshot) => {
   await percySnapshot('TodoMVC home page');
 
   // Enter a new to-do.
-  await page.type('.special-card', 'A really important todo');
+  //await page.type('.special-card', 'A really important todo');
   await page.keyboard.press('Enter');
   await percySnapshot('TodoMVC with a new todo special-card', { widths: [768, 992, 1200] });
   server.close();
