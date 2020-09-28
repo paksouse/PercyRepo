@@ -9,7 +9,7 @@ default_steps: &default_steps
     - checkout
     - run: cd percyAppTest && npm i
     - run: cd percyAppTest && ./node_modules/@angular/cli/bin/ng build
-    - run: cd percyAppTest/dist/percyAppTest && npm run snapshots
+    - run: cd percyAppTest/dist/percyAppTest && pwd && npm run snapshots
 
 jobs: # basic units of work in a run
   build:
