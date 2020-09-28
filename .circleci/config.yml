@@ -7,7 +7,8 @@ dependencies:
 default_steps: &default_steps
   steps:
     - checkout
-    - run: cd percyAppTest && npm ci && sudo npm install angular-cli -g && ng build
+    - run: cd percyAppTest && npm i
+    - run: cd percyAppTest && sudo npm install -g angular-cli && ng build
     - run: cd percyAppTest && npm run test
     - run: cd percyAppTest && npm run snapshots
 
