@@ -18,7 +18,7 @@ jobs: # basic units of work in a run
     working_directory: "~/percyAppTest"
     docker: # use the Docker executor
       # CircleCI node images available at: https://hub.docker.com/r/circleci/node/
-      - image: circleci/node:12-browsers
+      - image: circleci/node:14-browsers
     environment:
       - CHROME_BIN=  "/usr/bin/google-chrome"
       - PERCY_ENABLE: 0
