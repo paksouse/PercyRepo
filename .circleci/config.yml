@@ -2,12 +2,12 @@ version: 2.1
 
 dependencies:
   pre:
-    - npm install angular-cli@latest -g
+    - sudo npm install angular-cli@latest -g
 
 default_steps: &default_steps
   steps:
     - checkout
-    - run: cd percyAppTest && npm ci && npm install angular-cli -g && ng build
+    - run: cd percyAppTest && npm ci && sudo npm install angular-cli -g && ng build
     - run: cd percyAppTest && npm run snapshots
 
 jobs: # basic units of work in a run
